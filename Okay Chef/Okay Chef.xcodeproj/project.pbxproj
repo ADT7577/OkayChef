@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		955A96A02B1269F3006CAEE7 /* Okay_ChefApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */; };
-		955A96A22B1269F3006CAEE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A96A12B1269F3006CAEE7 /* ContentView.swift */; };
 		955A96A42B1269F4006CAEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955A96A32B1269F4006CAEE7 /* Assets.xcassets */; };
 		955A96A72B1269F4006CAEE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955A96A62B1269F4006CAEE7 /* Preview Assets.xcassets */; };
+		955A96F22B13022D006CAEE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A96F12B13022D006CAEE7 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		955A969C2B1269F3006CAEE7 /* Okay Chef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okay Chef.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okay_ChefApp.swift; sourceTree = "<group>"; };
-		955A96A12B1269F3006CAEE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		955A96A32B1269F4006CAEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		955A96A62B1269F4006CAEE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		955A96F12B13022D006CAEE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,7 @@
 		955A969E2B1269F3006CAEE7 /* Okay Chef */ = {
 			isa = PBXGroup;
 			children = (
-				955A96AE2B126E62006CAEE7 /* Models */,
-				955A96AD2B126A99006CAEE7 /* Views */,
+				955A96F12B13022D006CAEE7 /* ContentView.swift */,
 				955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */,
 				955A96A32B1269F4006CAEE7 /* Assets.xcassets */,
 				955A96A52B1269F4006CAEE7 /* Preview Content */,
@@ -66,21 +65,6 @@
 				955A96A62B1269F4006CAEE7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		955A96AD2B126A99006CAEE7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				955A96A12B1269F3006CAEE7 /* ContentView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		955A96AE2B126E62006CAEE7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955A96A22B1269F3006CAEE7 /* ContentView.swift in Sources */,
+				955A96F22B13022D006CAEE7 /* ContentView.swift in Sources */,
 				955A96A02B1269F3006CAEE7 /* Okay_ChefApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
