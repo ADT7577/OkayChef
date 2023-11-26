@@ -8,7 +8,7 @@ import SwiftUI
 struct Okay_ChefApp: App {
     var body: some Scene {
         WindowGroup {
-        DessertListView()
+        CategoryListView()
         }
     }
 }
