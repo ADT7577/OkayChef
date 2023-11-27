@@ -1,38 +1,21 @@
 //
+//
+//import Foundation
 //import SwiftUI
-//
-////MODELS
-//
-//struct Dessert:  Codable, Identifiable {
-//    let idMeal: String
-//    let strMeal: String
-//    let strMealThumb: String
-//    
-//    var id: String { idMeal }
-//}
-//
-//struct MealDetails: Codable {
-//    let strMeal: String
-//    let strMealThumb: String
-//    let strCategory: String
-//    let strInstructions: String
-//    let ingredients: [String]
-//    let measurements: [String]
-//}
-//
-//
-////FETCH API
+
+
+
 //
 //class NetworkManager: ObservableObject {
 //    @Published var desserts: [Dessert] = []
 //    @Published var selectedMeal: MealDetails?
-//    
-//    
+//
+//
 //    //DESSERTS
-//    
+
 //    func fetchDesserts(){
 //        guard let url = URL(string: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert") else { return }
-//        
+//
 //        URLSession.shared.dataTask(with: url) { data, _, error in
 //            guard let data = data else {
 //                print("There's no data here!!")
@@ -50,13 +33,17 @@
 //            }
 //        }.resume()
 //    }
-//    
+//
+
+
+
+
 //  //MEAL DETAILS
 //    func fetchMealDetails(for dessert: Dessert) {
 //        guard let url = URL(string:"https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(dessert.idMeal)") else {
 //            return
 //        }
-//        
+//
 //        URLSession.shared.dataTask(with: url) { [self] data, response, error in
 //            if let data = data {
 //                do {
@@ -64,7 +51,7 @@
 //                    if let mealDetails = response.values.first?.first {
 //                        let ingredients = extractIngredients(from: mealDetails)
 //                        let measurements = extractMeasurements(from: mealDetails)
-//                        
+//
 //                        let updatedMealDetails = MealDetails (
 //                            strMeal: mealDetails.strMeal,
 //                            strMealThumb: mealDetails.strMealThumb,
@@ -73,7 +60,7 @@
 //                            ingredients: ingredients,
 //                            measurements: measurements
 //                        )
-//                        
+//
 //                        DispatchQueue.main.async {
 //                            self.selectedMeal = updatedMealDetails
 //                        }
@@ -90,8 +77,11 @@
 //        }.resume()
 //    }
 //
+
+
+
 //    //INGREDIENTS
-//    
+//
 //    private func extractIngredients(from meal: MealDetails) -> [String] {
 //        var ingredients: [String] = []
 //        let mirror = Mirror(reflecting: meal)
@@ -103,6 +93,9 @@
 //        return ingredients
 //    }
 //
+
+
+
 //    //MEASUREMENTS
 //
 //    private func extractMeasurements(from meal: MealDetails) -> [String] {
@@ -118,59 +111,3 @@
 //
 //}
 //
-//
-////Views
-//
-//
-//struct SwiftUIView: View {
-//    @StateObject var networkManager = NetworkManager()
-//    
-//    var body: some View {
-//        NavigationView {
-//            List(networkManager.desserts) { dessert in
-//                NavigationLink(destination: DetailView(networkManager: networkManager, dessert: dessert)) {
-//                    Text(dessert.strMeal)
-//                }
-//            }
-//            .navigationTitle("Desserts")
-//        }
-//        .onAppear{
-//            networkManager.fetchDesserts()
-//        }
-//    }
-//}
-//
-//struct DetailView: View {
-//    @ObservedObject var networkManager: NetworkManager
-//    let dessert: Dessert
-//
-//    var body: some View {
-//        VStack {
-//            if let meal = networkManager.selectedMeal {
-//                Text("\(meal.strMeal)")
-//                Text("\(meal.strInstructions)")
-//                Text("Ingredients:")
-//                 List {
-//                    ForEach(0..<min(meal.ingredients.count, meal.measurements.count), id: \.self) { index in
-//                        Text("\(meal.measurements[index]) \(meal.ingredients[index])")
-//                    }
-//                }
-//                // Display other meal details here
-//            } else {
-//                Text("Loading...")
-//            }
-//        }
-//        .onAppear {
-//            networkManager.fetchMealDetails(for: dessert)
-//        }
-//        .navigationTitle("Meal Details")
-//    }
-//}
-//
-//
-////PREVIEW
-//struct SwiftUI_Preview: PreviewProvider{
-//    static var previews: some View {
-//     SwiftUIView()
-//    }
-//}
