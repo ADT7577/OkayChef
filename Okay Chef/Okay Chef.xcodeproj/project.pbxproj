@@ -7,32 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		952B19FF2B142BEE00565176 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B19FE2B142BEE00565176 /* SwiftUIView.swift */; };
 		952B1A012B145C8300565176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A002B145C8300565176 /* ContentView.swift */; };
 		952B1A0C2B153C4C00565176 /* DessertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A0B2B153C4C00565176 /* DessertModel.swift */; };
 		952B1A0E2B153CA200565176 /* MealDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A0D2B153CA200565176 /* MealDetailsModel.swift */; };
 		952B1A102B153CCA00565176 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A0F2B153CCA00565176 /* NetworkManager.swift */; };
 		952B1A122B153D0A00565176 /* MealDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A112B153D0A00565176 /* MealDetailsView.swift */; };
-		952B1A142B153D7F00565176 /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A132B153D7F00565176 /* Dessert.swift */; };
-		952B1A162B153DBE00565176 /* MealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A152B153DBE00565176 /* MealDetails.swift */; };
-		952B1A182B153DE100565176 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A172B153DE100565176 /* DetailView.swift */; };
-		952B1A1A2B153DF900565176 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B1A192B153DF900565176 /* APIManager.swift */; };
 		955A96A02B1269F3006CAEE7 /* Okay_ChefApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */; };
 		955A96A42B1269F4006CAEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955A96A32B1269F4006CAEE7 /* Assets.xcassets */; };
 		955A96A72B1269F4006CAEE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955A96A62B1269F4006CAEE7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		952B19FE2B142BEE00565176 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		952B1A002B145C8300565176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		952B1A0B2B153C4C00565176 /* DessertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertModel.swift; sourceTree = "<group>"; };
 		952B1A0D2B153CA200565176 /* MealDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsModel.swift; sourceTree = "<group>"; };
 		952B1A0F2B153CCA00565176 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		952B1A112B153D0A00565176 /* MealDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsView.swift; sourceTree = "<group>"; };
-		952B1A132B153D7F00565176 /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
-		952B1A152B153DBE00565176 /* MealDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetails.swift; sourceTree = "<group>"; };
-		952B1A172B153DE100565176 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		952B1A192B153DF900565176 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		955A969C2B1269F3006CAEE7 /* Okay Chef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okay Chef.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okay_ChefApp.swift; sourceTree = "<group>"; };
 		955A96A32B1269F4006CAEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,57 +57,11 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		952B1A052B153A9800565176 /* Version1 */ = {
-			isa = PBXGroup;
-			children = (
-				952B1A0A2B153C3600565176 /* Models */,
-				952B1A082B153BE900565176 /* Network */,
-				952B1A072B153BD100565176 /* Views */,
-			);
-			path = Version1;
-			sourceTree = "<group>";
-		};
-		952B1A062B153AB000565176 /* Version2 */ = {
-			isa = PBXGroup;
-			children = (
-				952B1A092B153C2E00565176 /* Models */,
-				952B1A042B153A7600565176 /* Network */,
-				952B1A022B153A1200565176 /* Views */,
-			);
-			path = Version2;
-			sourceTree = "<group>";
-		};
-		952B1A072B153BD100565176 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				952B19FE2B142BEE00565176 /* SwiftUIView.swift */,
-				952B1A172B153DE100565176 /* DetailView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		952B1A082B153BE900565176 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				952B1A192B153DF900565176 /* APIManager.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		952B1A092B153C2E00565176 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				952B1A0B2B153C4C00565176 /* DessertModel.swift */,
 				952B1A0D2B153CA200565176 /* MealDetailsModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		952B1A0A2B153C3600565176 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				952B1A132B153D7F00565176 /* Dessert.swift */,
-				952B1A152B153DBE00565176 /* MealDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,8 +85,9 @@
 		955A969E2B1269F3006CAEE7 /* Okay Chef */ = {
 			isa = PBXGroup;
 			children = (
-				952B1A062B153AB000565176 /* Version2 */,
-				952B1A052B153A9800565176 /* Version1 */,
+				952B1A092B153C2E00565176 /* Models */,
+				952B1A042B153A7600565176 /* Network */,
+				952B1A022B153A1200565176 /* Views */,
 				955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */,
 				955A96A32B1269F4006CAEE7 /* Assets.xcassets */,
 				955A96A52B1269F4006CAEE7 /* Preview Content */,
@@ -230,14 +175,9 @@
 			files = (
 				952B1A102B153CCA00565176 /* NetworkManager.swift in Sources */,
 				952B1A0E2B153CA200565176 /* MealDetailsModel.swift in Sources */,
-				952B1A142B153D7F00565176 /* Dessert.swift in Sources */,
-				952B1A182B153DE100565176 /* DetailView.swift in Sources */,
-				952B1A1A2B153DF900565176 /* APIManager.swift in Sources */,
 				955A96A02B1269F3006CAEE7 /* Okay_ChefApp.swift in Sources */,
 				952B1A122B153D0A00565176 /* MealDetailsView.swift in Sources */,
-				952B19FF2B142BEE00565176 /* SwiftUIView.swift in Sources */,
 				952B1A0C2B153C4C00565176 /* DessertModel.swift in Sources */,
-				952B1A162B153DBE00565176 /* MealDetails.swift in Sources */,
 				952B1A012B145C8300565176 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
