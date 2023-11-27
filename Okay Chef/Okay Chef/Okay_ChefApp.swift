@@ -3,12 +3,20 @@
 //
 
 import SwiftUI
-
+//
+//@main
+//struct Okay_ChefApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//        CategoryListView()
+//        }
+//    }
+//}
 @main
-struct Okay_ChefApp: App {
+struct MyApp: App {
     var body: some Scene {
         WindowGroup {
-        CategoryListView()
+          SwiftUIView()
         }
     }
 }
