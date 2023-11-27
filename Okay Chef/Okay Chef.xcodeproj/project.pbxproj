@@ -92,8 +92,9 @@
 				955A96A32B1269F4006CAEE7 /* Assets.xcassets */,
 				955A96A52B1269F4006CAEE7 /* Preview Content */,
 			);
-			path = "Okay Chef";
-			sourceTree = "<group>";
+			name = "Okay Chef";
+			path = "/Users/alexsorcist/Documents/GitHub/OkayChef/Okay Chef/Okay Chef";
+			sourceTree = "<absolute>";
 		};
 		955A96A52B1269F4006CAEE7 /* Preview Content */ = {
 			isa = PBXGroup;
