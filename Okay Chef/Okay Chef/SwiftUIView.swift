@@ -15,10 +15,27 @@ struct MealDetails: Codable {
     let strMeal: String
     let strCategory: String
     let strInstructions: String
-    let strIngredient1: String?
-    let strIngredient2: String?
-    let strIngredient3: String?
 }
+
+extension MealDetails {
+    var ingredients: [String] {
+        var ingredientsArray = [String]()
+        Mirror(reflecting: self).children.forEach { (label, value) in
+            if let ingredient = value as? String, !ingredient.isEmpty {
+                ingredientsArray.append(ingredient)
+            }
+        }
+        return ingredientsArray
+    }
+}
+
+
+
+
+
+
+
+
 
 //FETCH
 

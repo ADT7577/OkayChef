@@ -11,7 +11,6 @@
 		955A96A02B1269F3006CAEE7 /* Okay_ChefApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */; };
 		955A96A42B1269F4006CAEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955A96A32B1269F4006CAEE7 /* Assets.xcassets */; };
 		955A96A72B1269F4006CAEE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955A96A62B1269F4006CAEE7 /* Preview Assets.xcassets */; };
-		955A96F22B13022D006CAEE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A96F12B13022D006CAEE7 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okay_ChefApp.swift; sourceTree = "<group>"; };
 		955A96A32B1269F4006CAEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		955A96A62B1269F4006CAEE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		955A96F12B13022D006CAEE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				952B19FE2B142BEE00565176 /* SwiftUIView.swift */,
-				955A96F12B13022D006CAEE7 /* ContentView.swift */,
 				955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */,
 				955A96A32B1269F4006CAEE7 /* Assets.xcassets */,
 				955A96A52B1269F4006CAEE7 /* Preview Content */,
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955A96F22B13022D006CAEE7 /* ContentView.swift in Sources */,
 				955A96A02B1269F3006CAEE7 /* Okay_ChefApp.swift in Sources */,
 				952B19FF2B142BEE00565176 /* SwiftUIView.swift in Sources */,
 			);
