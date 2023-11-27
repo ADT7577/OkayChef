@@ -1,18 +1,25 @@
 # OkayChef 
-An attempt to make an iOS Recipe App using TheMealDB.
-© 2023 ALEXSA TOLENTINO
+## An attempt to make an iOS Recipe App using TheMealDB.
+### © 2023 ALEXSA TOLENTINO
 
-#Framework Used
+---
+
+## Framework Used
 -SwiftUI
 -Foundation
 
-
-##Notes
+---
+## Notes
 - No UX design included. 
 
-##API
+---
+
+## API
 - [The MealDB](https://themealdb.com/api.php)
 - [Desserts](https://themealdb.com/api/json/v1/1/filter.php?c=Dessert)
 
-##LINKS
+---
+## LINKS
+
 - [Instagram](https://www.instagram.com/alexsorcist/)
+- [Linkedin](https://www.Linkedin.com/in/Alexsatolentino)
