@@ -14,6 +14,10 @@ struct Dessert:  Codable, Identifiable {
 struct MealDetails: Codable {
     let strMeal: String
     let strCategory: String
+    let strInstructions: String
+    let strIngredient1: String?
+    let strIngredient2: String?
+    let strIngredient3: String?
 }
 
 //FETCH
@@ -98,6 +102,7 @@ struct DetailView: View {
             if let meal = networkManager.selectedMeal {
                 Text("Meal Name: \(meal.strMeal)")
                 Text("Category: \(meal.strCategory)")
+                Text("Instructions: \(meal.strInstructions)")
                 // Display other meal details here
             } else {
                 Text("Loading...")
