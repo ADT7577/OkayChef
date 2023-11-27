@@ -3,7 +3,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var networkManager = NetworkManager()
-    
+   
     var body: some View {
         NavigationView {
             List(networkManager.desserts) { dessert in
@@ -18,7 +18,6 @@ struct ContentView: View {
         }
     }
 }
-
 
 
 //PREVIEW

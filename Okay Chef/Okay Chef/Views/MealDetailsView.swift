@@ -10,7 +10,7 @@ import SwiftUI
 struct DetailView: View {
     @ObservedObject var networkManager: NetworkManager
     let dessert: Dessert
-
+    
     var body: some View {
         VStack {
             if let meal = networkManager.selectedMeal {
@@ -22,7 +22,6 @@ struct DetailView: View {
                         Text("\(meal.measurements[index]) \(meal.ingredients[index])")
                     }
                 }
-                // Display other meal details here
             } else {
                 Text("Loading...")
             }
@@ -33,3 +32,4 @@ struct DetailView: View {
         .navigationTitle("Meal Details")
     }
 }
+

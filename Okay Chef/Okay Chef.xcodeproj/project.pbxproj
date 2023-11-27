@@ -43,7 +43,6 @@
 		952B1A022B153A1200565176 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				952B1A002B145C8300565176 /* ContentView.swift */,
 				952B1A112B153D0A00565176 /* MealDetailsView.swift */,
 			);
 			path = Views;
@@ -89,6 +88,7 @@
 				952B1A042B153A7600565176 /* Network */,
 				952B1A022B153A1200565176 /* Views */,
 				955A969F2B1269F3006CAEE7 /* Okay_ChefApp.swift */,
+				952B1A002B145C8300565176 /* ContentView.swift */,
 				955A96A32B1269F4006CAEE7 /* Assets.xcassets */,
 				955A96A52B1269F4006CAEE7 /* Preview Content */,
 			);
