@@ -10,8 +10,8 @@
 
 ---
 ## Notes
-- No UX design included. 
-
+* No UX design included. 
+* Use ContentView to open Canvas. 
 ---
 
 ## API
