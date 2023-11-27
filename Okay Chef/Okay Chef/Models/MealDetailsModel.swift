@@ -4,6 +4,7 @@ import Foundation
 import SwiftUI
 
 
+
 //MEAL DETAILS
 
 struct MealDetails: Codable {

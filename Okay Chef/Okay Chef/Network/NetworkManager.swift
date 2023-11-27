@@ -33,7 +33,7 @@ class NetworkManager: ObservableObject {
         }.resume()
     }
     
-  //MEAL DETAILS
+   //MEAL DETAILS
     func fetchMealDetails(for dessert: Dessert) {
         guard let url = URL(string:"https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(dessert.idMeal)") else {
             return
@@ -47,21 +47,7 @@ class NetworkManager: ObservableObject {
                         DispatchQueue.main.async{
                             self.selectedMeal = mealDetails
                         }
-//                        let ingredients = extractIngredients(from: mealDetails)
-//                        let measurements = extractMeasurements(from: mealDetails)
-//                        
-//                        let updatedMealDetails = MealDetails(
-//                            strMeal: mealDetails.strMeal,
-//                            strMealThumb: mealDetails.strMealThumb,
-//                            strCategory: mealDetails.strCategory,
-//                            strInstructions: mealDetails.strInstructions,
-//                            ingredients: extractIngredients(from: mealDetails),
-//                            measurements: extractMeasurements(from: mealDetails)
-//                        )
-//                        DispatchQueue.main.async {
-//                            self.selectedMeal = updatedMealDetails
-//                        }
-                    }
+                  }
                 } catch {
                     print("Error decoding JSON: \(error)")
                     if let jsonString = String(data: data, encoding: .utf8) {
