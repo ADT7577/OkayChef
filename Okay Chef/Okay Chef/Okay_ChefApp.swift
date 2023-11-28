@@ -1,14 +1,14 @@
 
-//  Created by Alexsa Tolentino on 11/22/23.
-
 
 import SwiftUI
 
 @main
 struct MyApp: App {
+    let networkManager = NetworkManager()
+    
     var body: some Scene {
         WindowGroup {
-         ContentView()
+        CategoryView(networkManager: networkManager)
         }
     }
 }

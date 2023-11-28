@@ -1,28 +1,20 @@
 
+
 import SwiftUI
 
+
 struct ContentView: View {
-    @StateObject var networkManager = NetworkManager()
-   
-    var body: some View {
-        NavigationView {
-            List(networkManager.desserts) { dessert in
-                NavigationLink(destination: DetailView(networkManager: networkManager, dessert: dessert)) {
-                    Text(dessert.strMeal)
-                }
-            }
-            .navigationTitle("Desserts")
-        }
-        .onAppear{
-            networkManager.fetchDesserts()
+    let networkManager = NetworkManager()
+    var body: some View{
+        NavigationView{
+        CategoryView(networkManager: networkManager)
         }
     }
 }
 
 
-//PREVIEW
-struct ContentView_Preview: PreviewProvider{
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-     ContentView()
+        ContentView()
     }
 }

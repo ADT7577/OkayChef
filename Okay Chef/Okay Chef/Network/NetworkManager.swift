@@ -5,13 +5,35 @@ import SwiftUI
 
 //FETCH API
 
+
 class NetworkManager: ObservableObject {
+    @Published var categories: [Category] = []
     @Published var desserts: [Dessert] = []
     @Published var selectedMeal: MealDetails?
-    
-    
+        
     //DESSERTS
     
+    func fetchCategory(){
+        guard let url = URL(string: "https://www.themealdb.com/api/json/v1/1/categories.php") else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+            print("No Category Data")
+                return
+            }
+            do {
+                let response = try JSONDecoder().decode([String: [Category]].self, from: data)
+                if let categories = response["categories"] {
+                    DispatchQueue.main.async {
+                        self.categories = categories
+                    }
+                }
+            } catch {
+                print("Error on the category fetch")
+            }
+        }.resume()
+    }
+        
     func fetchDesserts(){
         guard let url = URL(string: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert") else { return }
         
@@ -33,6 +55,7 @@ class NetworkManager: ObservableObject {
         }.resume()
     }
     
+  
    //MEAL DETAILS
     func fetchMealDetails(for dessert: Dessert) {
         guard let url = URL(string:"https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(dessert.idMeal)") else {
@@ -60,8 +83,17 @@ class NetworkManager: ObservableObject {
         }.resume()
     }
 
-    //INGREDIENTS
+ 
+ 
     
+    
+    
+    
+    
+    
+//PRIVATE FUNCTIONS
+    
+    //INGREDIENTS
     private func extractIngredients(from meal: MealDetails) -> [String] {
         var ingredients: [String] = []
         let mirror = Mirror(reflecting: meal)
@@ -73,6 +105,7 @@ class NetworkManager: ObservableObject {
         return ingredients
     }
 
+    
     //MEASUREMENTS
 
     private func extractMeasurements(from meal: MealDetails) -> [String] {
@@ -86,3 +119,5 @@ class NetworkManager: ObservableObject {
         return measurements
     }
 }
+
+  

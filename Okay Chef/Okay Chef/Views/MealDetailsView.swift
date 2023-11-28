@@ -33,3 +33,8 @@ struct DetailView: View {
     }
 }
 
+struct MealDetailsView_Preview: PreviewProvider{
+    static var previews: some View {
+    EmptyView()
+    }
+}
